@@ -1,52 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
 html,
 body {
-    font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .section {
-    padding-top: 75px;
+  padding-top: 75px;
 }
 
 .next {
-    font-size: 65px;
+  font-size: 65px;
 }
 
 .next a {
-    color: rgb(33, 37, 41);
+  color: rgb(33, 37, 41);
 }
 
 .arrow-next {
-    color: var(--bs-primary) !important;
+  color: var(--bs-primary) !important;
 }
 
 .arrow-next:hover {
-    color: var(--bs-primary-dark) !important;
+  color: var(--bs-primary-dark) !important;
 }
 
 .nav-item:hover {
-    background-color: var(--bs-primary-dark)
+  background-color: var(--bs-primary-dark);
 }
 
 .language-wrapper img,
 .contact-wrapper a {
-    height: 60px;
-    transition-duration: 0.3s;
-    transition-property: all;
+  height: 60px;
+  transition-duration: 0.3s;
+  transition-property: all;
 }
 
 .language-wrapper img:hover,
 .contact-wrapper a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .class-card {
-    background-color: #eeeeee;
-    color: black;
-    transition-property: all;
-    transition-duration: 0.3s;
+  background-color: #eeeeee;
+  color: black;
+  transition-property: all;
+  transition-duration: 0.3s;
 }
 
 .class-card:hover {
-    background-color: var(--bs-primary);
-    color: white;
+  background-color: var(--bs-primary);
+  color: white;
 }

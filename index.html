@@ -25,19 +25,6 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
@@ -93,8 +80,9 @@
       <div
         class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5"
       >
-      <!-- Set Photo Here -->
+        <!-- Set Photo Here -->
         <img
+          src="Profile.jpeg"
           style="height: 150px; width: 150px"
           class="rounded-circle"
           draggable="false"
@@ -105,7 +93,7 @@
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          <span id="name">Neel Patel</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -211,47 +199,51 @@
           I've worked on some neat things.
         </h5>
       </div>
-      <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Inspiro for Esperanza</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            maximus nisi in neque blandit auctor. Vestibulum pellentesque
+            fringilla nulla quis sagittis. Donec id erat sodales, fringilla est
+            non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
+            tincidunt eros non, pharetra orci. Donec massa neque, suscipit at
+            purus ac, cursus tincidunt purus. Suspendisse imperdiet massa nec
+            sem dictum luctus. Vestibulum at porta lectus, sed faucibus libero.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
       </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
-        </p>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Work From Home Pinterest</h5>
+          <p class="card-text">
+            Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
+            ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
+            Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
+            imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
+            dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
+            varius urna dictum porta.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
       </div>
-      <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
-      </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
-        </p>
-      </div>
-      <div class="row w-100">
-        <h5>Query Dating Site</h5>
-      </div>
-      <div class="row w-100">
-        <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
-        </p>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Query Dating Site</h5>
+          <p class="card-text">
+            Fusce egestas lectus ac est porttitor congue. Mauris lacinia
+            pharetra odio ut egestas. Nullam facilisis condimentum consequat.
+            Integer arcu nibh, ullamcorper non fringilla quis, tempus sit amet
+            turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis
+            pharetra at, porttitor sit amet dolor. Ut et accumsan metus.
+            Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
+            Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus
+            lobortis nibh est, id pretium orci efficitur at.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
       </div>
       <div class="row mt-3 next">
         <a href="#courses" class="col"
@@ -334,61 +326,77 @@
       </div>
     </div>
     <div
-      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+      class="container section min-vh-75 d-flex justify-content-center flex-column align-items-center pb-5 mb-5"
       id="contact"
     >
-      <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">
-          Feel Like Reaching Out?
-        </h4>
-      </div>
-      <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
-          I don't bite.
-        </h5>
-      </div>
-      <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
-          <iconify-icon
-            icon="logos:google-gmail"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Email"
-          ></iconify-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
-          ><iconify-icon
-            icon="skill-icons:linkedin"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="LinkedIn"
-          ></iconify-icon>
-        </a>
-        <a href="https://github.com/johndoe" class="col"
-          ><iconify-icon
-            icon="skill-icons:github-dark"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="GitHub"
-          ></iconify-icon>
-        </a>
-      </div>
-      <div class="row mt-5">
-        <div>
-          <a href="#home">
-            <button type="button" class="btn btn-primary">
-              Return to Top<iconify-icon
-                icon="material-symbols:arrow-circle-up"
-                class="fs-5"
-                style="margin-bottom: -3.5px; margin-left: 5px"
-              ></iconify-icon></button
-          ></a>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+      >
+        Contact Me
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="contactModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Contact form goes here -->
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -396,11 +404,11 @@
     <script>
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
-      )
+      );
       const tooltipList = [...tooltipTriggerList].map(
         (tooltipTriggerEl) =>
           new bootstrap.Tooltip(tooltipTriggerEl, { delay: { hide: 50 } })
-      )
+      );
     </script>
   </body>
 </html>
